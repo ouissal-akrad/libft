@@ -1,13 +1,26 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ouakrad <ouakrad@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/10/14 11:02:12 by ouakrad           #+#    #+#             */
+/*   Updated: 2022/10/14 11:02:16 by ouakrad          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include"libft.h"
-int ft_tolower(int c)
+
+int	ft_tolower(int c)
 {
-    if(c >= 'A' && c <= 'Z')
-        c += 32;
-    return (c);
+	if (c >= 'A' && c <= 'Z')
+		c += 32;
+	return (c);
 }
 
-int main()
-{
-    char c = 'A';
-    printf("%c",ft_tolower(c));
-}
+// int main()
+// {
+//     char c = 'A';
+//     printf("%c",ft_tolower(c));
+// }

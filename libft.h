@@ -1,26 +1,49 @@
-#ifndef LIB_FT
-#define LIB_FT
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ouakrad <ouakrad@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/10/08 17:43:03 by ouakrad           #+#    #+#             */
+/*   Updated: 2022/10/14 11:07:51 by ouakrad          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-#include<stdio.h>
-#include<unistd.h>
-int ft_isalpha(int c);
-int ft_isdigit(int c);
-int ft_isalnum( int c );
-int ft_isascii(int c);
-int ft_isprint( int c );
-size_t ft_strlen(const char *str);
-int ft_toupper( int character );
-int ft_tolower( int character );
-int ft_atoi(const char *str);
-char *ft_strchr(const char *str, int c);
-char * strrchr( const char *str, int c );
-int ft_strncmp( const char *s1, const char *s2, size_t n );
-char 	*ft_strnstr (const char *s, const char *to_find, size_t n);
-size_t ft_strlcpy(char *dst, const char *src, size_t size);
-size_t ft_strlcat(char *dest, const char *src, size_t size);
-void *ft_memset(void *ptr, int x, size_t n);
-void ft_bzero(void *s, size_t n);
-void *ft_memcpy(void *dst, const void *src, size_t n);
-void *ft_memmove( void * dest, const void * src, size_t n);
+#ifndef LIBFT_H
+# define LIBFT_H
 
+# include<stdio.h>
+# include<unistd.h>
+# include<stdlib.h>
+# include<string.h>
+//------------------------- Libc functions -------------------------
+int		ft_isalpha(int c);
+int		ft_isdigit(int c);
+int		ft_isalnum( int c );
+int		ft_isascii(int c);
+int		ft_isprint( int c );
+size_t	ft_strlen(const char *str);
+int		ft_toupper( int character );
+int		ft_tolower( int character );
+int		ft_atoi(const char *str);
+char	*ft_strchr(const char *str, int c);
+char	*ft_strrchr( const char *str, int c );
+int		ft_strncmp( const char *s1, const char *s2, size_t n );
+char	*ft_strnstr(const char *s, const char *to_find, size_t n);
+size_t	ft_strlcpy(char *dst, const char *src, size_t size);
+size_t	ft_strlcat(char *dest, const char *src, size_t size);
+void	*ft_memset(void *ptr, int x, size_t n);
+void	ft_bzero(void *s, size_t n);
+void	*ft_memcpy(void *dst, const void *src, size_t n);
+void	*ft_memmove( void *dest, const void *src, size_t n);
+void	*ft_memchr(const void *str, int c, size_t n);
+int		ft_memcmp( const void *s, const void *s2, size_t n);
+void	*ft_calloc(size_t count, size_t size);
+char	*ft_strdup(const char *str);
+//------------------------- Additional functions -------------------------
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
+char	*ft_itoa(int n);
 #endif

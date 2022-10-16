@@ -1,33 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ouakrad <ouakrad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/08 17:41:57 by ouakrad           #+#    #+#             */
-/*   Updated: 2022/10/13 21:51:55 by ouakrad          ###   ########.fr       */
+/*   Created: 2022/10/10 10:37:51 by ouakrad           #+#    #+#             */
+/*   Updated: 2022/10/14 10:48:43 by ouakrad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
-#include <string.h>
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+char	*ft_strdup(const char *str)
 {
-	unsigned char	*tmp_dst;
-	unsigned char	*tmp_src;
+	char	*ret;
+	int		i;
 
-	tmp_dst = (unsigned char *)dst;
-	tmp_src = (unsigned char *)src;
-	while (n--)
-		*tmp_dst++ = *tmp_src++;
-	return (dst);
+	if (!str)
+		return (NULL);
+	ret = malloc((ft_strlen(str) + 1));
+	if (!ret)
+		return (NULL);
+	i = 0;
+	while (str[i])
+	{
+		ret[i] = str[i];
+		i++;
+	}
+	ret[i] = '\0';
+	return (ret);
 }
-
 // int main()
 // {
-//     char dest[20] = "wissal";
-//     char src[6] = "aharib";
-
+//     char *str = "akrad";
+//     char *s = ft_strdup(str);
+//     printf("%s", s);
+//     return 0;
 // }

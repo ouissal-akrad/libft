@@ -1,13 +1,24 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ouakrad <ouakrad@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/10/08 17:41:43 by ouakrad           #+#    #+#             */
+/*   Updated: 2022/10/13 21:44:30 by ouakrad          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include"libft.h"
-int ft_isprint( int c )
+
+int	ft_isprint( int c )
 {
-    if(c >= 32 && c <= 127)
-        return 1;
-    return 0;
+	return (c >= 32 && c <= 126);
 }
 
-int main()
-{
-    int c = 32;
-    printf("%d",ft_isprint(c));
-}
+// int main()
+// {
+//     int c = 32;
+//     printf("%d",ft_isprint(c));
+// }
