@@ -6,7 +6,7 @@
 /*   By: ouakrad <ouakrad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 17:42:41 by ouakrad           #+#    #+#             */
-/*   Updated: 2022/10/14 10:55:24 by ouakrad          ###   ########.fr       */
+/*   Updated: 2022/10/18 16:44:04 by ouakrad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ char	*ft_strnstr(const char *s, const char *to_find, size_t n)
 	}
 	return (NULL);
 }
+
 
 // int main()
 // {

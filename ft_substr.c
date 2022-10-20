@@ -6,7 +6,7 @@
 /*   By: ouakrad <ouakrad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 11:38:47 by ouakrad           #+#    #+#             */
-/*   Updated: 2022/10/14 10:59:07 by ouakrad          ###   ########.fr       */
+/*   Updated: 2022/10/19 14:51:22 by ouakrad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 // int main()
 // {
 //     char *s;
-//     s = ft_substr("wissal akrad",2,8);
-//     printf("'%s'\n",s);
+//     s = ft_substr("wissal akrad",11,8);
+//     printf("%s\n",s);
 // }
+
+
+

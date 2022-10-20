@@ -1,24 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ouakrad <ouakrad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/08 17:41:17 by ouakrad           #+#    #+#             */
-/*   Updated: 2022/10/19 15:34:14 by ouakrad          ###   ########.fr       */
+/*   Created: 2022/10/17 09:57:46 by ouakrad           #+#    #+#             */
+/*   Updated: 2022/10/17 11:07:29 by ouakrad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+#include "libft.h"
 
-int	ft_isalnum(int c)
+void	ft_putchar_fd(char c, int fd)
 {
-	return (ft_isalpha(c) || ft_isdigit(c));
+	write(fd, &c, 1);
 }
 
-int main()
-{
-    char c = '7';
-    printf("%d",ft_isalnum(c));
-}
+// int main()
+// {
+//     int fd = open("char.txt", O_CREAT | O_RDWR | O_APPEND);
+//     ft_putchar_fd('o',fd);
+// }

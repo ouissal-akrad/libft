@@ -6,7 +6,7 @@
 /*   By: ouakrad <ouakrad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 17:40:07 by ouakrad           #+#    #+#             */
-/*   Updated: 2022/10/14 12:36:47 by ouakrad          ###   ########.fr       */
+/*   Updated: 2022/10/17 09:30:23 by ouakrad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,8 +41,8 @@ int	ft_atoi(const char *str)
 	return ((value * sign));
 }
 
-int main()
-{
-   printf("%d\n",ft_atoi("9223372036854775808"));
-    printf("%d\n", atoi("9223372036854775808"));
-}
+// int main()
+// {
+//    printf("%d\n",ft_atoi("9223372036854775808"));
+//     printf("%d\n", atoi("9223372036854775808"));
+// }

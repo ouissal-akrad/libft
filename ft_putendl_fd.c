@@ -1,24 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ouakrad <ouakrad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/08 17:41:17 by ouakrad           #+#    #+#             */
-/*   Updated: 2022/10/19 15:34:14 by ouakrad          ###   ########.fr       */
+/*   Created: 2022/10/17 10:43:26 by ouakrad           #+#    #+#             */
+/*   Updated: 2022/10/17 11:08:12 by ouakrad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+#include "libft.h"
 
-int	ft_isalnum(int c)
+void	ft_putendl_fd(char *s, int fd)
 {
-	return (ft_isalpha(c) || ft_isdigit(c));
+	ft_putstr_fd(s,fd);
+	write(fd,"\n",1);
 }
 
-int main()
-{
-    char c = '7';
-    printf("%d",ft_isalnum(c));
-}
+// int main()
+// {
+//     int fd = open("putendl.txt", O_CREAT | O_RDWR | O_APPEND);
+//     ft_putendl_fd("wissal",fd);
+// }
