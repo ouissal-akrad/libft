@@ -6,7 +6,7 @@
 /*   By: ouakrad <ouakrad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 17:42:41 by ouakrad           #+#    #+#             */
-/*   Updated: 2022/10/18 16:44:04 by ouakrad          ###   ########.fr       */
+/*   Updated: 2022/10/26 18:42:04 by ouakrad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,9 @@ char	*ft_strnstr(const char *s, const char *to_find, size_t n)
 	size_t	i;
 	size_t	j;
 
-	if (s == NULL || *to_find == '\0')
+	if ((!s || !to_find) && n == 0)
+		return (NULL);
+	if (*to_find == '\0')
 		return ((char *)s);
 	i = 0;
 	while (s[i] && i < n)
@@ -35,16 +37,3 @@ char	*ft_strnstr(const char *s, const char *to_find, size_t n)
 	}
 	return (NULL);
 }
-
-
-// int main()
-// {
-//     // const char *s = "TutorialsPoint";
-//     // char *to_find = "ial";
-//     // const char *s = NULL;
-//     // char *to_find = "ial";
-//     // printf("%s\n",ft_strnstr(s,to_find,6));
-//     //printf("%s",strnstr(s,to_find,6));
-//     printf("%p\n", strnstr("NULL","NULL",1));
-//     return 0;
-// }

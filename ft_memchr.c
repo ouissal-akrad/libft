@@ -6,7 +6,7 @@
 /*   By: ouakrad <ouakrad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 17:41:49 by ouakrad           #+#    #+#             */
-/*   Updated: 2022/10/13 21:45:53 by ouakrad          ###   ########.fr       */
+/*   Updated: 2022/10/26 18:41:06 by ouakrad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,14 +28,3 @@ void	*ft_memchr(const void *str, int c, size_t n)
 	}
 	return (NULL);
 }
-// int main()
-// {
-//     // char *str = "wissal";
-//     int p[] = {4950, 4950, 4950}; // 4950 is {86, 19, 0, 0}
-//     // char *pnt;
-//     // char c = 's';
-//     // pnt = ft_memchr(p, 86, 3);
-//     printf("%s\n",ft_memchr(p, 86, sizeof(p)));
-//     printf("%s\n",memchr(p, 86, sizeof(p)));
-//     // printf("%s",pnt);
-// }

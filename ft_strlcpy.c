@@ -6,7 +6,7 @@
 /*   By: ouakrad <ouakrad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 17:42:26 by ouakrad           #+#    #+#             */
-/*   Updated: 2022/10/14 10:52:14 by ouakrad          ###   ########.fr       */
+/*   Updated: 2022/10/26 18:41:52 by ouakrad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	}
 	return (len);
 }
-
-// int main()
-// {
-//      char src[] = "wissal";
-//     char dst[] = "qqqq";
-//     printf("%zu | %s\n",ft_strlcpy(dst,src,4),dst);
-//     printf("%zu | %s\n",strlcpy(dst,src,4),dst);
-// }

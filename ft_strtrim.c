@@ -6,13 +6,13 @@
 /*   By: ouakrad <ouakrad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 09:58:49 by ouakrad           #+#    #+#             */
-/*   Updated: 2022/10/14 12:28:27 by ouakrad          ###   ########.fr       */
+/*   Updated: 2022/10/26 18:42:12 by ouakrad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
 
-int	check_set(char c, char const *set)
+static int	check_set(char c, char const *set)
 {
 	size_t	i;
 
@@ -50,9 +50,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	str[i] = '\0';
 	return (str);
 }
-// int main() 
-// {
-//     char *s = ft_strtrim("ssssss", "s");
-//     printf("%s\n",s);
-//     free(s);
-// }

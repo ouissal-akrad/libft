@@ -6,7 +6,7 @@
 /*   By: ouakrad <ouakrad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 17:41:05 by ouakrad           #+#    #+#             */
-/*   Updated: 2022/10/13 21:37:07 by ouakrad          ###   ########.fr       */
+/*   Updated: 2022/10/26 18:40:13 by ouakrad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,3 @@ void	ft_bzero(void *s, size_t n)
 {
 	ft_memset(s, 0, n);
 }
-
-// int main()
-// {
-//     char s[7]= "wissal";
-//     ft_bzero(s,2);
-//     printf("%c",s[3]);
-// }

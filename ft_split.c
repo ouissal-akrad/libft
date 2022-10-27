@@ -6,13 +6,13 @@
 /*   By: ouakrad <ouakrad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 09:04:48 by ouakrad           #+#    #+#             */
-/*   Updated: 2022/10/17 17:18:19 by ouakrad          ###   ########.fr       */
+/*   Updated: 2022/10/26 18:37:11 by ouakrad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
 
-int	count_word(char *s, char c)
+static int	count_word(char *s, char c)
 {
 	int	i;
 	int	count;
@@ -37,7 +37,7 @@ int	count_word(char *s, char c)
 	return (count);
 }
 
-int	count_char(char *s, char c)
+static int	count_char(char *s, char c)
 {
 	int	count_char;
 	int	i;
@@ -54,7 +54,7 @@ int	count_char(char *s, char c)
 	return (count_char);
 }
 
-int	split1(char *s, char c, char **resultat)
+static	int	split1(char *s, char c, char **resultat)
 {
 	int	i;
 	int	j;
@@ -69,16 +69,15 @@ int	split1(char *s, char c, char **resultat)
 		while (s[i] && s[i] == c)
 			i++;
 		if (!s[i])
-			break;
+			break ;
 		j = count_char(&s[i], c);
 		resultat[mot] = (char *)malloc(j + 1);
 		if (!resultat)
 			return (mot);
 		while (pos_char < j)
 			resultat[mot][pos_char++] = s[i++];
-		resultat[mot][pos_char] = 0;
+		resultat[mot++][pos_char] = 0;
 		pos_char = 0;
-		mot++;
 	}
 	resultat[mot] = 0;
 	return (-1);
@@ -90,9 +89,9 @@ char	**ft_split(char const *s, char c)
 	char	**resultat;
 	int		count;
 
-	count = count_word((char *)s, c);
 	if (!s)
 		return (NULL);
+	count = count_word((char *)s, c);
 	resultat = malloc(sizeof(char *) * (count + 1));
 	if (!resultat)
 		return (NULL);

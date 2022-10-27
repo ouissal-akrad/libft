@@ -6,7 +6,7 @@
 /*   By: ouakrad <ouakrad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 08:46:07 by ouakrad           #+#    #+#             */
-/*   Updated: 2022/10/14 10:50:21 by ouakrad          ###   ########.fr       */
+/*   Updated: 2022/10/26 18:41:46 by ouakrad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	pnt[j] = '\0';
 	return (pnt);
 }
-// int main()
-// {
-//     char *s1 = "1337";
-//     char *s2 = "@gmail.com";
-//     printf("%s", ft_strjoin(s1,s2));
-// }

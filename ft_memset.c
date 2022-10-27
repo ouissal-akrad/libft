@@ -6,7 +6,7 @@
 /*   By: ouakrad <ouakrad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 17:42:09 by ouakrad           #+#    #+#             */
-/*   Updated: 2022/10/17 09:29:32 by ouakrad          ###   ########.fr       */
+/*   Updated: 2022/10/26 18:41:19 by ouakrad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,19 +27,3 @@ void	*ft_memset(void *ptr, int x, size_t n)
 	}
 	return (ptr);
 }
-// int main()
-//  {
-//    char s[7] = "wissal";
-//     printf("%s",ft_memset(s,'$',5));
-//     int t[3] = {0,1, 2};
-//     memset(t,1, sizeof(t));
-//     printf("%d\n", t[0]);
-//  }
-
-// int main() 
-// {
-//     char *a = malloc(1);
-//     ft_memset(a, 'a', 10);
-// 	a[9] = 'b';
-//     printf("%c\n", a[2]);
-// }

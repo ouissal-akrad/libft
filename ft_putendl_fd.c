@@ -6,7 +6,7 @@
 /*   By: ouakrad <ouakrad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 10:43:26 by ouakrad           #+#    #+#             */
-/*   Updated: 2022/10/17 11:08:12 by ouakrad          ###   ########.fr       */
+/*   Updated: 2022/10/26 18:41:24 by ouakrad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,6 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	ft_putstr_fd(s,fd);
-	write(fd,"\n",1);
+	ft_putstr_fd(s, fd);
+	write(fd, "\n", 1);
 }
-
-// int main()
-// {
-//     int fd = open("putendl.txt", O_CREAT | O_RDWR | O_APPEND);
-//     ft_putendl_fd("wissal",fd);
-// }

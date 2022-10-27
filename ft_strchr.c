@@ -6,7 +6,7 @@
 /*   By: ouakrad <ouakrad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 17:42:13 by ouakrad           #+#    #+#             */
-/*   Updated: 2022/10/14 10:47:06 by ouakrad          ###   ########.fr       */
+/*   Updated: 2022/10/26 18:41:38 by ouakrad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,3 @@ char	*ft_strchr(const char *str, int c)
 		return ((char *)str);
 	return (NULL);
 }
-// int main()
-// {
-//     char *str = "wissal";
-//     char *pnt;
-//     char c = 's';
-//     pnt = ft_strchr(str,c);
-//     printf("%s",pnt);
-// }

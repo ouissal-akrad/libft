@@ -38,10 +38,22 @@ SRC = ft_strrchr.c\
 		ft_putendl_fd.c\
 		ft_putnbr_fd.c
 
+BNS = ft_lstnew.c\
+		ft_lstadd_front.c\
+		ft_lstsize.c\
+		ft_lstlast.c\
+		ft_lstadd_back.c\
+		ft_lstdelone.c\
+		ft_lstclear.c\
+		ft_lstiter.c\
+		ft_lstmap.c
+OBJ_M = $(SRC:.c=.o)
 
-OBJ = $(SRC:.c=.o)
+OBJ_B = $(BNS:.c=.o)
 
-DEP = $(SRC:.c=.d)
+DEP_M = $(SRC:.c=.d)
+
+DEP_B = $(BNS:.c=.d)
 
 %.o: %.c #Makefile
 	$(CC) $(CFLAGS) -o $@ -c $<
@@ -49,22 +61,26 @@ DEP = $(SRC:.c=.d)
 %.d: %.c
 	@$(CC) -MM -o $@ $<
 
-$(NAME) : $(OBJ) #Makefile
+$(NAME) : $(OBJ_M) #Makefile
 	@echo "Creating $(NAME)"
-	@$(AR) rcs $(NAME) $(OBJ)
+	@$(AR) rcs $(NAME) $(OBJ_M)
 
 all : $(NAME)
 
 clean :
 	@echo "deleting .o and .d"
-	@$(RM) $(OBJ) $(DEP)
+	@$(RM) $(OBJ_M) $(OBJ_B) $(DEP_M) $(DEP_B)
 
 fclean : clean
 	@echo "deleting $(NAME)"
 	@$(RM) $(NAME)
 
--include $(DEP)
+-include $(DEP_M) $(DEP_B)
 
 re : fclean all
+
+bonus  : $(OBJ_B) #Makefile
+	@echo "Creating $(NAME)"
+	@$(AR) rcs $(NAME) $(OBJ_B)
 
 .PHONY : clean fclean all re

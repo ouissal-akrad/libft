@@ -6,7 +6,7 @@
 /*   By: ouakrad <ouakrad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 18:30:54 by ouakrad           #+#    #+#             */
-/*   Updated: 2022/10/13 21:50:12 by ouakrad          ###   ########.fr       */
+/*   Updated: 2022/10/26 18:41:09 by ouakrad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 		i++;
 	return (tmp_s1[i] - tmp_s2[i]);
 }
-// int main()
-// {
-//     // char dest[20] = "wissal";
-//     // char src[6] = "aharib";
-//     printf("%d\n",ft_memcmp("NULL","NULL",0));
-//     printf("%d",memcmp("NULL","NULL",0));
-// }

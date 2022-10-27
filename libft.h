@@ -6,19 +6,18 @@
 /*   By: ouakrad <ouakrad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 17:43:03 by ouakrad           #+#    #+#             */
-/*   Updated: 2022/10/19 18:27:41 by ouakrad          ###   ########.fr       */
+/*   Updated: 2022/10/26 18:40:00 by ouakrad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include<stdio.h>
 # include<unistd.h>
 # include<stdlib.h>
-# include<string.h>
-# include<fcntl.h>
+
 //------------------------- Libc functions -------------------------
+
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum( int c );
@@ -42,7 +41,9 @@ void	*ft_memchr(const void *str, int c, size_t n);
 int		ft_memcmp( const void *s, const void *s2, size_t n);
 void	*ft_calloc(size_t count, size_t size);
 char	*ft_strdup(const char *str);
+
 //------------------------- Additional functions -------------------------
+
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
@@ -54,6 +55,7 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+
 //------------------------- Bonus -------------------------
 
 typedef struct s_list
@@ -65,6 +67,7 @@ typedef struct s_list
 t_list	*ft_lstnew(void *content);
 void	ft_lstadd_front(t_list **lst, t_list *new);
 int		ft_lstsize(t_list *lst);
+t_list	*ft_lstlast(t_list *lst);
 void	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstdelone(t_list *lst, void (*del)(void*));
 void	ft_lstclear(t_list **lst, void (*del)(void*));

@@ -6,7 +6,7 @@
 /*   By: ouakrad <ouakrad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 11:02:12 by ouakrad           #+#    #+#             */
-/*   Updated: 2022/10/14 11:02:16 by ouakrad          ###   ########.fr       */
+/*   Updated: 2022/10/26 18:42:19 by ouakrad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,3 @@ int	ft_tolower(int c)
 		c += 32;
 	return (c);
 }
-
-// int main()
-// {
-//     char c = 'A';
-//     printf("%c",ft_tolower(c));
-// }

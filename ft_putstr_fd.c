@@ -6,7 +6,7 @@
 /*   By: ouakrad <ouakrad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 10:14:34 by ouakrad           #+#    #+#             */
-/*   Updated: 2022/10/17 12:46:49 by ouakrad          ###   ########.fr       */
+/*   Updated: 2022/10/26 18:41:30 by ouakrad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,9 @@ void	ft_putstr_fd(char *s, int fd)
 {
 	int	i;
 
+	if (!s)
+		return ;
 	i = 0;
 	while (s[i])
-		write (fd, &s[i++], 1); 
+		write (fd, &s[i++], 1);
 }
-
-// int main()
-// {
-//     int fd = open("str.txt", O_CREAT | O_RDWR | O_APPEND);
-//     ft_putstr_fd("akrad",fd);
-// }
